@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mambo de Condenados - Novela Visual Folklórica</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">MAMBO DE CONDENADOS</h1>
+                <p class="hero-subtitle">Una novela visual de suspenso folklórico argentino</p>
+                <div class="hero-buttons">
+                    <a href="https://ctapo.itch.io/mambo-de-condenados" class="btn btn-primary" target="_blank">
+                        <svg class="btn-icon" viewBox="0 0 24 24" width="20" height="20">
+                            <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h-2v-6h2v6zm4 0h-2v-6h2v6z"/>
+                        </svg>
+                        Jugar Demo
+                    </a>
+                    <a href="#sinopsis" class="btn btn-secondary">Conocer la Historia</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SINOPSIS -->
+    <section id="sinopsis" class="section synopsis">
+        <div class="container">
+            <h2 class="section-title">LA CONDENA DEL PACTO</h2>
+            <div class="synopsis-grid">
+                <div class="synopsis-text">
+                    <p><strong>Argentina, 1920.</strong> Sos un guitarrista venido a menos que selló un pacto de sangre con El Mandinga en la cueva de La Salamanca.</p>
+                    <p>Obtuviste un don sobrenatural para hechizar con tu canto, pero ahora cada decisión te cuesta humanidad, enfurece al diablo o pone en riesgo a tus aliados.</p>
+                    <p>¿Vas a poder zafar de todos los mambos de los condenados sin que te cobren el alma?</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🎭</div>
+                        <h3>Decisiones con Consecuencias</h3>
+                        <p>Cada elección afecta tu humanidad y reputación con el diablo</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔮</div>
+                        <h3>Folklore Interactivo</h3>
+                        <p>Viví la leyenda de El Mandinga y La Salamanca como nunca antes</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💀</div>
+                        <h3>Múltiples Finales</h3>
+                        <p>Descubrí todos los destinos posibles en esta historia de horror criollo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERÍA DE PROCESO -->
+    <section class="section process-gallery">
+        <div class="container">
+            <h2 class="section-title">DETRÁS DEL MAMBO: NUESTRO PROCESO CREATIVO</h2>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-slide active">
+                        <img src="assets/img/process/moodboard.jpg" alt="Moodboard e Inspiración">
+                        <div class="slide-content">
+                            <h3>Moodboard e Inspiración</h3>
+                            <p>Recopilación de referencias visuales y sonoras del folklore argentino</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="assets/img/process/bocetos-personajes.jpg" alt="Bocetos de Personajes">
+                        <div class="slide-content">
+                            <h3>Bocetos de Personajes</h3>
+                            <p>Desarrollo conceptual de El Mandinga, La China y los personajes principales</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="assets/img/process/diagrama-narrativo.jpg" alt="Diagrama Narrativo">
+                        <div class="slide-content">
+                            <h3>Diagrama Narrativo</h3>
+                            <p>Estructura ramificada de las decisiones y múltiples finales</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="assets/img/process/desarrollo-renpy.jpg" alt="Desarrollo en Ren'Py">
+                        <div class="slide-content">
+                            <h3>Desarrollo en Ren'Py</h3>
+                            <p>Implementación del juego en el motor de novelas visuales</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev" onclick="changeSlide(-1)">‹</button>
+                    <div class="carousel-indicators">
+                        <span class="indicator active" onclick="goToSlide(0)"></span>
+                        <span class="indicator" onclick="goToSlide(1)"></span>
+                        <span class="indicator" onclick="goToSlide(2)"></span>
+                        <span class="indicator" onclick="goToSlide(3)"></span>
+                    </div>
+                    <button class="carousel-btn next" onclick="changeSlide(1)">›</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EQUIPO -->
+    <section class="section team">
+        <div class="container">
+            <h2 class="section-title">EL EQUIPO DETRÁS DE LA CONDENA</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="assets/img/team/lucas-traverso.jpg" alt="Lucas Traverso">
+                    </div>
+                    <h3>Lucas Traverso</h3>
+                    <p class="member-role">Diseño de juego y guión</p>
+                    <p class="member-quote">"El que escribió este mambo"</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="assets/img/team/gonzalo-rios.jpg" alt="Gonzalo Ríos">
+                    </div>
+                    <h3>Gonzalo Ríos</h3>
+                    <p class="member-role">Arte visual y sonoro</p>
+                    <p class="member-quote">"El que dibujó la condena"</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="assets/img/team/pablo-duran.jpg" alt="Pablo Duran">
+                    </div>
+                    <h3>Pablo A. Durán</h3>
+                    <p class="member-role">Programación</p>
+                    <p class="member-quote">"El que programó el destino"</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="assets/img/team/luz-opazo.jpg" alt="Luz Opazo">
+                    </div>
+                    <h3>M. Luz Opazo</h3>
+                    <p class="member-role">Producción</p>
+                    <p class="member-quote">"La que mantuvo la cordura"</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="assets/img/team/lucas-arancibia.jpg" alt="Lucas Arancibia">
+                    </div>
+                    <h3>Lucas Arancibia</h3>
+                    <p class="member-role">Arte conceptual</p>
+                    <p class="member-quote">"El que dio forma a los condenados"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERÍA DE BOCETOS -->
+    <section class="section sketches">
+        <div class="container">
+            <h2 class="section-title">DE LA IDEA AL PIXEL: EVOLUCIÓN VISUAL</h2>
+            <div class="sketches-grid">
+                <div class="sketch-item">
+                    <img src="assets/img/bocetos/boceto-1.jpg" alt="Boceto inicial">
+                    <div class="sketch-overlay">
+                        <span>Concepto inicial</span>
+                    </div>
+                </div>
+                <div class="sketch-item">
+                    <img src="assets/img/bocetos/boceto-2.jpg" alt="Desarrollo personajes">
+                    <div class="sketch-overlay">
+                        <span>Desarrollo de personajes</span>
+                    </div>
+                </div>
+                <div class="sketch-item">
+                    <img src="assets/img/bocetos/boceto-3.jpg" alt="Escenarios">
+                    <div class="sketch-overlay">
+                        <span>Diseño de escenarios</span>
+                    </div>
+                </div>
+                <div class="sketch-item">
+                    <img src="assets/img/bocetos/boceto-4.jpg" alt="Paleta de colores">
+                    <div class="sketch-overlay">
+                        <span>Paleta de colores</span>
+                    </div>
+                </div>
+                <div class="sketch-item">
+                    <img src="assets/img/bocetos/boceto-5.jpg" alt="Arte final">
+                    <div class="sketch-overlay">
+                        <span>Arte final pixel</span>
+                    </div>
+                </div>
+                <div class="sketch-item">
+                    <img src="assets/img/bocetos/boceto-6.jpg" alt="Interfaz">
+                    <div class="sketch-overlay">
+                        <span>Diseño de interfaz</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Ctapó Studios</h3>
+                    <p>Creando experiencias interactivas con identidad argentina</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://ctapo.itch.io/mambo-de-condenados" target="_blank" title="Jugar Demo">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h-2v-6h2v6zm4 0h-2v-6h2v6z"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/tu-grupo/mambo-renpy" target="_blank" title="Ver Código">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.022.798-.223 1.654-.334 2.504-.338.85.004 1.705.115 2.504.338 1.909-1.291 2.747-1.022 2.747-1.022.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 Ctapó Studios - Mambo de Condenados. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
