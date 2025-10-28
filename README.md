@@ -5,7 +5,7 @@
 [![Itch.io](https://img.shields.io/badge/Itch.io-Jugar%20Demo-orange)](https://pabloz.itch.io/mambo-de-condenados)
 [![GitHub](https://img.shields.io/badge/GitHub-Código-blue)](https://github.com/Pablo7776/MamboDeCondenados)
 
-**Sitio web oficial** de *Mambo de Condenados*, una novela visual de suspenso folklórico argentino desarrollada por **Ctapó Studios**.
+**Sitio web oficial** de *Mambo de Condenados*, una novela visual de suspenso folklórico argentino desarrollada por **Ctapo Studios**.
 
 ## Características del Sitio
 
