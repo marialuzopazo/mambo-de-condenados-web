@@ -1,7 +1,7 @@
 # mambo-de-condenados-web
 ![mambo de condenados](https://github.com/user-attachments/assets/c637f351-e0a5-42d8-af9b-5e6a4c7cb60f)
 
-[![Demo en Vivo](https://img.shields.io/badge/Demo-En%20Vivo-brightgreen)](https://mambo-de-condenados-web.vercel.app/)
+[![web presentacion](https://img.shields.io/badge/web-%20presentacion-brightgreen)](https://mambo-de-condenados-web.vercel.app/)
 [![Itch.io](https://img.shields.io/badge/Itch.io-Jugar%20Demo-orange)](https://pabloz.itch.io/mambo-de-condenados)
 [![GitHub](https://img.shields.io/badge/GitHub-Código-blue)](https://github.com/Pablo7776/MamboDeCondenados)
 
