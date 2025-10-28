@@ -1,12 +1,13 @@
-/* ESTILOS GENERALES */
+/* ESTILOS GENERALES - PALETA BORDO ACTUALIZADA */
 :root {
-    --color-dark: #1A0F05;
-    --color-primary: #2D1B07;
-    --color-secondary: #8B4513;
-    --color-accent: #D2691E;
-    --color-light: #F5DEB3;
-    --color-text: #E8D5B5;
-    --color-border: #5D4037;
+    --color-dark: #2A0F0F;
+    --color-primary: #5D1F1F;
+    --color-secondary: #8B2E2E;
+    --color-accent: #B33A3A;
+    --color-light: #F5E6E6;
+    --color-text: #E8D5D5;
+    --color-border: #7A3B3B;
+    --color-overlay: rgba(43, 15, 15, 0.85);
 }
 
 * {
@@ -55,7 +56,7 @@ body {
     background: var(--color-accent);
 }
 
-/* HERO SECTION */
+/* HERO SECTION ACTUALIZADA */
 .hero {
     height: 100vh;
     position: relative;
@@ -72,11 +73,29 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: 
-        radial-gradient(circle at 20% 50%, rgba(210, 105, 30, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(139, 69, 19, 0.1) 0%, transparent 50%),
-        linear-gradient(135deg, var(--color-dark) 0%, var(--color-primary) 100%);
     z-index: -1;
+}
+
+.hero-bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+}
+
+.hero-background::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        45deg,
+        var(--color-overlay) 0%,
+        rgba(90, 31, 31, 0.7) 50%,
+        var(--color-overlay) 100%
+    );
 }
 
 .hero-content {
@@ -140,13 +159,13 @@ body {
     font-size: 1.1rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    box-shadow: 0 4px 15px rgba(210, 105, 30, 0.3);
+    box-shadow: 0 4px 15px rgba(179, 58, 58, 0.3);
 }
 
 .btn:hover {
     background: var(--color-secondary);
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(210, 105, 30, 0.4);
+    box-shadow: 0 8px 25px rgba(179, 58, 58, 0.4);
 }
 
 .btn-secondary {
@@ -200,7 +219,7 @@ body {
 }
 
 .feature-card {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.08);
     padding: 30px;
     border-radius: 12px;
     border-left: 4px solid var(--color-accent);
@@ -266,7 +285,7 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(transparent, rgba(26, 15, 5, 0.95));
+    background: linear-gradient(transparent, var(--color-overlay));
     color: white;
     padding: 40px;
     text-align: left;
@@ -331,7 +350,7 @@ body {
     transform: scale(1.2);
 }
 
-/* EQUIPO */
+/* EQUIPO ACTUALIZADO CON LINKS */
 .team {
     background: var(--color-primary);
 }
@@ -346,13 +365,19 @@ body {
 .team-member {
     text-align: center;
     padding: 30px 20px;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.08);
     border-radius: 20px;
     transition: transform 0.3s ease;
 }
 
 .team-member:hover {
     transform: translateY(-10px);
+}
+
+.member-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
 .member-photo {
@@ -362,7 +387,9 @@ body {
     border-radius: 50%;
     overflow: hidden;
     border: 4px solid var(--color-accent);
-    box-shadow: 0 8px 25px rgba(210, 105, 30, 0.3);
+    box-shadow: 0 8px 25px rgba(179, 58, 58, 0.3);
+    position: relative;
+    cursor: pointer;
 }
 
 .member-photo img {
@@ -372,8 +399,35 @@ body {
     transition: transform 0.3s ease;
 }
 
-.team-member:hover .member-photo img {
+.member-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(179, 58, 58, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 50%;
+}
+
+.member-overlay span {
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.member-photo:hover img {
     transform: scale(1.1);
+}
+
+.member-photo:hover .member-overlay {
+    opacity: 1;
 }
 
 .team-member h3 {
@@ -437,7 +491,7 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(transparent, rgba(26, 15, 5, 0.9));
+    background: linear-gradient(transparent, var(--color-overlay));
     color: white;
     padding: 20px;
     text-align: center;
