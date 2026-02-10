@@ -2,7 +2,7 @@
 ![mambo de condenados](https://github.com/user-attachments/assets/c637f351-e0a5-42d8-af9b-5e6a4c7cb60f)
 
 [![web presentacion](https://img.shields.io/badge/web-%20presentacion-brightgreen)](https://mambo-de-condenados-web.vercel.app/)
-[![Itch.io](https://img.shields.io/badge/Itch.io-Jugar%20Demo-orange)](https://pabloz.itch.io/mambo-de-condenados)
+[![Itch.io](https://img.shields.io/badge/Itch.io-Jugar%20Demo-orange)](https://ctapo-producciones.itch.io/mambo-de-condenados))
 [![GitHub](https://img.shields.io/badge/GitHub-Código-blue)](https://github.com/Pablo7776/MamboDeCondenados)
 
 **Sitio web oficial** de *Mambo de Condenados*, una novela visual de suspenso folklórico argentino desarrollada por **Ctapo Studios**.
